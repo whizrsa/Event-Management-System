@@ -1,6 +1,8 @@
-﻿namespace Event_Management_System.Models
+﻿using Microsoft.AspNetCore.Identity;
+
+namespace Event_Management_System.Models
 {
-    public class AppUser
+    public class AppUser : IdentityUser
     {
     }
 }

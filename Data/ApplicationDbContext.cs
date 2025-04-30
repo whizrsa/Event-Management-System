@@ -1,6 +1,12 @@
-﻿namespace Event_Management_System.Data
+﻿using Microsoft.EntityFrameworkCore;
+
+namespace Event_Management_System.Data
 {
-    public class ApplicationDbContext
+    public class ApplicationDbContext : DbContext
     {
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options): base(options)
+        {
+
+        }
     }
 }
